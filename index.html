@@ -4,65 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Java World</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0;
-      }
-
-      header {
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-      }
-
-      nav {
-        background-color: #444;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-      }
-
-      nav a {
-        color: #fff;
-        text-decoration: none;
-        margin: 0 10px;
-      }
-
-      section {
-        padding: 20px;
-        margin: 20px;
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-
-      footer {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 20px;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Bem-vindo ao Java World</h1>
+    <header class="fade-in">
+      <h1 class="bounce">Bem-vindo ao Java World</h1>
     </header>
-    <nav>
+    <nav class="fade-in">
       <a href="#introduction">Introdução</a>
       <a href="#features">Recursos</a>
       <a href="#benefits">Benefícios</a>
       <a href="#resources">Recursos de Aprendizado</a>
       <a href="#news">Últimas Notícias</a>
+      <a href="#contact">Contato</a>
     </nav>
-    <section id="introduction">
+    <section id="introduction" class="fade-in">
       <h2>Introdução ao Java</h2>
       <p>
         Java é uma linguagem de programação de alto nível, orientada a objetos e
@@ -72,7 +28,7 @@
         aplicativos para desktop, web e dispositivos móveis.
       </p>
     </section>
-    <section id="features">
+    <section id="features" class="fade-in">
       <h2>Recursos do Java</h2>
       <ul>
         <li>Sintaxe simples e familiar</li>
@@ -82,7 +38,7 @@
         <li>Grande comunidade de desenvolvedores</li>
       </ul>
     </section>
-    <section id="benefits">
+    <section id="benefits" class="fade-in">
       <h2>Benefícios de usar Java</h2>
       <ul>
         <li>Ampla compatibilidade</li>
@@ -92,42 +48,65 @@
         <li>Capacidade de desenvolvimento em larga escala</li>
       </ul>
     </section>
-    <section id="resources">
+    <section id="resources" class="fade-in">
       <h2>Recursos de Aprendizado</h2>
       <ul>
         <li>
-          <a href="https://www.codecademy.com/learn/learn-java"
+          <a href="https://www.codecademy.com/learn/learn-java" target="_blank"
             >Codecademy - Curso de Java</a
           >
         </li>
         <li>
-          <a href="https://www.udemy.com/topic/java/">Udemy - Cursos de Java</a>
+          <a href="https://www.udemy.com/topic/java/" target="_blank"
+            >Udemy - Cursos de Java</a
+          >
         </li>
         <li>
           <a
             href="https://www.amazon.com.br/s?k=java&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss_1"
+            target="_blank"
             >Livros sobre Java na Amazon</a
           >
         </li>
       </ul>
     </section>
-    <section id="news">
+    <section id="news" class="fade-in">
       <h2>Últimas Notícias</h2>
       <ul>
-        <li>
-          <a href="https://www.oracle.com/java/technologies/java11.html"
-            >Java 11 lançado!</a
+        <li class="article">
+          <h3>Java 11 lançado!</h3>
+          <p>Confira as novidades da versão mais recente do Java.</p>
+          <a
+            href="https://www.oracle.com/java/technologies/java11.html"
+            target="_blank"
+            >Saiba mais</a
           >
         </li>
-        <li>
+        <li class="article">
+          <h3>Lançamento do JDK 16</h3>
+          <p>Explore as funcionalidades e melhorias do JDK 16.</p>
           <a
             href="https://www.oracle.com/java/technologies/javase-jdk16-downloads.html"
-            >Lançamento do JDK 16</a
+            target="_blank"
+            >Saiba mais</a
           >
         </li>
       </ul>
     </section>
-    <footer>
+    <section id="contact" class="fade-in">
+      <h2>Contato</h2>
+      <form action="#" method="post">
+        <label for="name">Nome:</label><br />
+        <input type="text" id="name" name="name" /><br />
+        <label for="email">E-mail:</label><br />
+        <input type="email" id="email" name="email" /><br />
+        <label for="message">Mensagem:</label><br />
+        <textarea id="message" name="message" rows="4" cols="50"></textarea
+        ><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+    <footer class="fade-in">
       <p>&copy; 2024 Java World. Todos os direitos reservados.</p>
     </footer>
   </body>
