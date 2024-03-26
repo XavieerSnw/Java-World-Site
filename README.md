@@ -30,7 +30,7 @@ Java World é um lugar onde entusiastas de programação podem aprender sobre a 
 
 - HTML
 - CSS
-- 
+  
 ---
 
 Criado com ❤️ por [Murillo Xavier](https://github.com/XavieerSnw).
